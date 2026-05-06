@@ -26,6 +26,7 @@
         </div>
     </nav>
 
+    <main class="flex-wrapper">
     <div class="container mt-5">
         <h2 class="text-success border-bottom border-success pb-2 mb-4">/Контакты</h2>
         
@@ -46,14 +47,16 @@
             <div class="col-md-6 mb-4">
                 <h5 class="text-success">Почему DevSecOps? (Мультимедиа)</h5>
                 <p class="text-muted small">Небольшое видео, которое отлично объясняет философию моей будущей профессии.</p>
-                <div class="ratio ratio-16x9 border border-success">
-                    <iframe src="https://www.youtube.com/embed/PIfEITn7FzU?si=2QJ3_a2_0" title="YouTube video player" allowfullscreen></iframe>
-                </div>
+                <video class="w-100 border border-success" controls>
+                    <source src="video/video.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
             </div>
         </div>
     </div>
+    </main>
 
-    <footer class="bg-black text-center text-muted py-2 mt-5 border-top border-success">
+    <footer class="bg-black text-center text-muted py-2 border-top border-success">
         <div class="container">
             <p class="mb-0">© 2026 Никитин Егор. Все материалы принадлежат автору.</p>
             <small>При создании структуры сайта и оптимизации кода частично использовались ИИ-ассистенты.</small>
