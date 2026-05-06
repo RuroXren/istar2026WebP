@@ -1,23 +1,97 @@
+
+:root {
+    --bg-black: #050505;       
+    --term-green: #198754;     
+    --term-glow: #20c997;      
+    --text-main: #e0e0e0;      
+    --text-muted: #888888;     
+}
+
 body {
-    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-black) !important;
+    color: var(--text-main) !important;
+    font-family: 'Ubuntu Mono', 'Courier New', monospace;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #000 !important;
+    color: var(--text-muted) !important; 
+    border-top: 1px solid var(--term-green);
+    padding: 20px 0;
+}
+
+footer small, footer p {
+    color: var(--text-muted) !important;
+}
+
+.navbar {
+    background-color: #000 !important;
+    border-bottom: 1px solid var(--term-green);
 }
 
 .nav-link {
-    transition: color 0.3s ease-in-out;
+    color: var(--text-main) !important;
 }
-.nav-link:hover {
-    color: #198754 !important;
-    text-shadow: 0 0 5px #198754;
+
+.nav-link:hover, .nav-link.active {
+    color: var(--term-glow) !important;
+    text-shadow: 0 0 8px var(--term-glow);
+}
+
+h1, h2, h3, h4, .text-success {
+    color: var(--term-glow) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .card {
-    box-shadow: 0 0 15px rgba(25, 135, 84, 0.2);
+    background-color: #0a0a0a !important;
+    border: 1px solid var(--term-green) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-outline-success {
-    transition: all 0.3s ease;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(32, 201, 151, 0.3);
 }
-.btn-outline-success:hover {
-    box-shadow: 0 0 10px #198754, 0 0 20px #198754;
-    transform: translateY(-2px);
+
+.card-text {
+    color: var(--text-main) !important;
+}
+
+a {
+    color: var(--term-glow);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px var(--term-glow);
+}
+
+.btn-success {
+    background-color: var(--term-green);
+    border-color: var(--term-green);
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: var(--term-glow);
+    box-shadow: 0 0 10px var(--term-glow);
+    color: #000;
+}
+
+.debug-text {
+    color: #222;
+}
+
+.flex-wrapper {
+    flex: 1 0 auto;
 }
