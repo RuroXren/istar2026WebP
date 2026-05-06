@@ -1,0 +1,23 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+    color: #198754 !important;
+    text-shadow: 0 0 5px #198754;
+}
+
+.card {
+    box-shadow: 0 0 15px rgba(25, 135, 84, 0.2);
+}
+
+.btn-outline-success {
+    transition: all 0.3s ease;
+}
+.btn-outline-success:hover {
+    box-shadow: 0 0 10px #198754, 0 0 20px #198754;
+    transform: translateY(-2px);
+}
